@@ -1,5 +1,5 @@
 /*
-Copyright 2023 New Vector Ltd.
+Copyright 2023 The Matrix.org Foundation C.I.C.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,10 +14,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-declare module "*.svg" {
-  export const ReactComponent: React.FunctionComponent<
-    React.SVGAttributes<SVGElement>
-  >;
-}
-
-declare module "*.module.css";
+// jest-dom adds custom jest matchers for asserting on DOM nodes.
+// allows you to do things like:
+// expect(element).toHaveTextContent(/react/i)
+// learn more: https://github.com/testing-library/jest-dom
+import "@testing-library/jest-dom";
+import "@testing-library/jest-dom/extend-expect";

@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { Meta, StoryFn } from "@storybook/react";
 
 import { Body as BodyComponent } from "./Body";
 
@@ -32,9 +32,9 @@ export default {
       control: { type: "inline-radio" },
     },
   },
-} as ComponentMeta<typeof BodyComponent>;
+} as Meta<typeof BodyComponent>;
 
-const Template: ComponentStory<typeof BodyComponent> = (args) => (
+const Template: StoryFn<typeof BodyComponent> = (args) => (
   <BodyComponent size={args.size} weight={args.weight}>
     The quick brown fox jumps over the lazy dog
   </BodyComponent>

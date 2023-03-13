@@ -1,5 +1,6 @@
 /*
 Copyright 2023 The Matrix.org Foundation C.I.C.
+Copyright 2023 New Vector Ltd
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -15,7 +16,7 @@ limitations under the License.
 */
 
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { Meta, StoryFn } from "@storybook/react";
 
 import { Heading as HeadingComponent } from "./Heading";
 
@@ -30,9 +31,9 @@ export default {
     options: ["regular", "medium", "semibold"],
     control: { type: "inline-radio" },
   },
-} as ComponentMeta<typeof HeadingComponent>;
+} as Meta<typeof HeadingComponent>;
 
-const Template: ComponentStory<typeof HeadingComponent> = (args) => (
+const Template: StoryFn<typeof HeadingComponent> = (args) => (
   <HeadingComponent size={args.size} weight={args.weight}>
     The quick brown fox jumps over the lazy dog
   </HeadingComponent>

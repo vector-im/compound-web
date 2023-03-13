@@ -1,5 +1,6 @@
 /*
 Copyright 2023 The Matrix.org Foundation C.I.C.
+Copyright 2023 New Vector Ltd
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -54,4 +55,9 @@ limitations under the License.
   unicode-range: var(--cpd-inter-unicode-range);
   src: url("/fonts/Inter/Inter-Bold.woff2") format("woff2"),
       url("/fonts/Inter/Inter-Bold.woff") format("woff");
+}
+
+html, body {
+  font: var(--cpd-font-body-md-regular);
+  color: var(--cpd-color-text-primary);
 }

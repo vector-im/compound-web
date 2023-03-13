@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar renders the image-less avatar 1`] = `
+<DocumentFragment>
+  <span
+    aria-label=""
+    class="avatar"
+    data-color="8"
+    data-type="round"
+    role="img"
+    title="@bob:example.org"
+  >
+    B
+  </span>
+</DocumentFragment>
+`;
